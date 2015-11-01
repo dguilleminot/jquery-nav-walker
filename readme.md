@@ -13,14 +13,16 @@ This clone will be fixed on scroll and appear. The both navigation will receive 
 
 
 ###Configure
-```<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+```
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="pathTo/jquery.navwalker.min.js"></script>
 <script>
   var breakpointArgument = NUMBER;
    // breakpointArgument corresponding to the window width which will switch the navigation to responsive.
    // must be a number !important!
   $("my-main-navigation").navWalker(breakpointArgument);
-</script>```
+</script>
+```
 
  ** Small Css Required **
 ```
@@ -50,7 +52,8 @@ You can put a bouton inside the `.my-nav` navigation with the ` nav-walker-btn `
 ###Overwrite functions
 This plugin use addClass/removeClass for the final action (below this), the same way than Angular's ng-hide.
 
-```//nav can be .responsive-nav or .nav-walker
+```
+//nav can be .responsive-nav or .nav-walker
 function showNav(nav){
   nav.removeClass("is-hidden");
 }
